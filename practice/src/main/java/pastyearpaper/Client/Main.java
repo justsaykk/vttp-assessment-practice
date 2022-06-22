@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.UnknownHostException;
 import java.util.*;
 
+import pastyearpaper.Server.HttpClientConnection;
 import pastyearpaper.Server.HttpServer;
 
 public class Main {
@@ -57,7 +58,7 @@ public class Main {
         }
 
         // Start new HttpServer
-        HttpServer httpServer = new HttpServer();
-        httpServer.start(PORT, docRoot);
+        HttpClientConnection connection = new HttpClientConnection();
+        connection.start(PORT, docRoot);
     }
 }
