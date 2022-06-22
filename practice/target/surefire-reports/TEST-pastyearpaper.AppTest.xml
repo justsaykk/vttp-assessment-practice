@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="SG"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/18.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/kaikeinwoo/Desktop/VTTP/projects/vttppastyear/practice/target/surefire/surefirebooter3085332909473418805.jar /Users/kaikeinwoo/Desktop/VTTP/projects/vttppastyear/practice/target/surefire 2022-06-22T12-50-27_771-jvmRun1 surefire10081558230238288543tmp surefire_02936495574364997565tmp"/>
+    <property name="sun.java.command" value="/Users/kaikeinwoo/Desktop/VTTP/projects/vttppastyear/practice/target/surefire/surefirebooter10574360361841102824.jar /Users/kaikeinwoo/Desktop/VTTP/projects/vttppastyear/practice/target/surefire 2022-06-22T15-02-15_638-jvmRun1 surefire5848473741104031221tmp surefire_017868009338058526109tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/kaikeinwoo/Desktop/VTTP/projects/vttppastyear/practice/target/test-classes:/Users/kaikeinwoo/Desktop/VTTP/projects/vttppastyear/practice/target/classes:/Users/kaikeinwoo/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/kaikeinwoo/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/kaikeinwoo/Desktop/VTTP/projects/vttppastyear/practice/target/surefire/surefirebooter3085332909473418805.jar"/>
+    <property name="surefire.real.class.path" value="/Users/kaikeinwoo/Desktop/VTTP/projects/vttppastyear/practice/target/surefire/surefirebooter10574360361841102824.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="18.0.1+0"/>
@@ -56,5 +56,5 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="pastyearpaper.AppTest" time="0.001"/>
+  <testcase name="shouldAnswerWithTrue" classname="pastyearpaper.AppTest" time="0.002"/>
 </testsuite>
