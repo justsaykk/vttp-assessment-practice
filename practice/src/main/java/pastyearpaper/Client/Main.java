@@ -5,7 +5,6 @@ import java.net.UnknownHostException;
 import java.util.*;
 
 import pastyearpaper.Server.HttpClientConnection;
-import pastyearpaper.Server.HttpServer;
 
 public class Main {
     public static void main(String[] args) throws UnknownHostException, IOException {
