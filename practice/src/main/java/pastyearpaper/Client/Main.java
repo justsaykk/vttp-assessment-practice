@@ -1,13 +1,18 @@
 package pastyearpaper.Client;
 
-import java.io.IOException;
-import java.net.UnknownHostException;
+import java.io.*;
+import java.net.*;
 import java.util.*;
 
-import pastyearpaper.Server.HttpClientConnection;
-
+/*
+General Steps to follow when creating server <-> client connections
+    1. Create a class to handle the session (especially for multithreaded operations)
+    2. In the client-side session class perform the following:
+        2a. Create output streams & input streams (in this order)
+        2b. Make sure to handle both the client-side request and the server-side response
+*/
 public class Main {
-    public static void main(String[] args) throws UnknownHostException, IOException {
+    public static void main(String[] args) throws IOException {
         // Get args
         int PORT = 3000;
         List<String> docRoot = new ArrayList<>();
@@ -57,7 +62,8 @@ public class Main {
         }
 
         // Start new HttpServer
-        HttpClientConnection connection = new HttpClientConnection();
-        connection.start(PORT, docRoot);
+        Socket sock = new Socket("localhost", PORT);
+        ClientSession clientSession = new ClientSession(sock, docRoot);
+        clientSession.start();
     }
 }
