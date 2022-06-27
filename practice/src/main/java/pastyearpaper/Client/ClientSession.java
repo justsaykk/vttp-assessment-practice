@@ -20,11 +20,11 @@ public class ClientSession {
 
     public void start() throws IOException {
         initializeStreams(sock);
-        String response = read();
         Boolean isOpen = true;
         while (isOpen) {
             request(docRoot);
-            response = read();
+            String response = read();
+            System.out.println(response);
         }
         close();
     }
