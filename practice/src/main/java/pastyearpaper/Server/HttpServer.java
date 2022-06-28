@@ -17,11 +17,11 @@ public class HttpServer {
 
             while (isOpen) {
                 System.out.println("Waiting for client connection");
-                server.accept();
+                Socket sock = server.accept();
                 Boolean successfulConnection = true;
                 if (successfulConnection) {
                     System.out.println("Starting HttpClientConnection");
-                    HttpClientConnection session = new HttpClientConnection();
+                    HttpClientConnection session = new HttpClientConnection(sock);
                     threadPool.execute(session);
                 } else
                     System.out.println("Connection failed");
