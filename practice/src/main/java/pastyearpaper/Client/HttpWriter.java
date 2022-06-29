@@ -1,5 +1,4 @@
-// TODO: Change to your package 
-package mywebserver;
+package pastyearpaper.Client;
 
 import java.io.*;
 

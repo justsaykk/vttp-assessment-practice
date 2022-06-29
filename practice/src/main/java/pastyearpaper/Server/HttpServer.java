@@ -21,7 +21,7 @@ public class HttpServer {
                 Boolean successfulConnection = true;
                 if (successfulConnection) {
                     System.out.println("Starting HttpClientConnection");
-                    HttpClientConnection session = new HttpClientConnection(sock);
+                    HttpClientConnection session = new HttpClientConnection(sock, docRoot);
                     threadPool.execute(session);
                 } else
                     System.out.println("Connection failed");
